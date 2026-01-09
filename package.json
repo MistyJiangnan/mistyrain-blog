@@ -11,7 +11,7 @@
 		"start": "astro dev",
 		"check": "astro check",
 		"update-anime": "node scripts/update-bangumi.mjs",
-		"build": "node scripts/update-bangumi.mjs && astro build && pagefind --site dist && node scripts/compress-fonts.js",
+		"build": "node scripts/update-bangumi.mjs && astro build && pagefind --site dist && node scripts/compress-fonts.js && node scripts/cos-merge-into-one-album.js",
 		"submit": "node scripts/indexnow-submit.js",
 		"preview": "astro preview",
 		"astro": "astro",
