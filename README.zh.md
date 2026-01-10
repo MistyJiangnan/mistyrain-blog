@@ -22,8 +22,8 @@
 
 一个现代化、功能丰富的静态博客模板，基于 [Astro](https://astro.build) 构建，具有先进的功能和精美的设计。
 
-[**🖥️ 在线演示**](https://mizuki.mysqil.com/)
-[**📝 用户文档**](https://docs.mizuki.mysqil.com/)
+[**🖥️ 在线演示**](https://mistyrain.mysqil.com/)
+[**📝 用户文档**](https://docs.mistyrain.mysqil.com/)
 
 🌏 README 语言
 [**English**](./README.md) /
@@ -98,8 +98,8 @@
 
 1. **克隆仓库：**
    ```bash
-   git clone https://github.com/matsuzaka-yuki/mizuki.git
-   cd mizuki
+   git clone https://github.com/matsuzaka-yuki/mistyrain.git
+   cd mistyrain
    ```
 
 2. **安装依赖：**

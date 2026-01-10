@@ -133,11 +133,11 @@ git push
 cd "$MIZUKI_PATH"
 
 # 备份原内容 (以防万一)
-mkdir -p ../mizuki-content-backup
-cp -r src/content/posts ../mizuki-content-backup/
-cp -r src/content/spec ../mizuki-content-backup/
-cp -r src/data ../mizuki-content-backup/
-cp -r public/images ../mizuki-content-backup/
+mkdir -p ../mistyrain-content-backup
+cp -r src/content/posts ../mistyrain-content-backup/
+cp -r src/content/spec ../mistyrain-content-backup/
+cp -r src/data ../mistyrain-content-backup/
+cp -r public/images ../mistyrain-content-backup/
 
 # 删除已迁移的内容 (保留目录结构)
 rm -rf src/content/posts/*

@@ -44,7 +44,7 @@ export const timelineData: TimelineItem[] = [
 		featured: true,
 	},
 	{
-		id: "mizuki-blog-project",
+		id: "mistyrain-blog-project",
 		title: "Mizuki Personal Blog Project",
 		description:
 			"A personal blog website developed using the Astro framework as a practical project for learning frontend technologies.",
@@ -60,12 +60,12 @@ export const timelineData: TimelineItem[] = [
 		links: [
 			{
 				name: "GitHub Repository",
-				url: "https://github.com/example/mizuki-blog",
+				url: "https://github.com/example/mistyrain-blog",
 				type: "project",
 			},
 			{
 				name: "Live Demo",
-				url: "https://mizuki-demo.example.com",
+				url: "https://mistyrain-demo.example.com",
 				type: "website",
 			},
 		],

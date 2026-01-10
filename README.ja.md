@@ -22,8 +22,8 @@
 
 [Astro](https://astro.build)をベースにした、先進的な機能と美しいデザインを備えた現代的な静的ブログテンプレートです。
 
-[**🖥️ ライブデモ**](https://mizuki.mysqil.com/)
-[**📝 ドキュメント**](https://docs.mizuki.mysqil.com/)
+[**🖥️ ライブデモ**](https://mistyrain.mysqil.com/)
+[**📝 ドキュメント**](https://docs.mistyrain.mysqil.com/)
 
 🌏 README 言語
 [**English**](../README.md) /
@@ -96,8 +96,8 @@
 
 1. **リポジトリをクローン：**
    ```bash
-   git clone https://github.com/matsuzaka-yuki/mizuki.git
-   cd mizuki
+   git clone https://github.com/matsuzaka-yuki/mistyrain.git
+   cd mistyrain
    ```
 
 2. **依存関係をインストール：**

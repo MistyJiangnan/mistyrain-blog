@@ -23,8 +23,8 @@
 
 A modern, feature-rich static blog template built with [Astro](https://astro.build), featuring advanced functionality and beautiful design.
 
-[**🖥️ Live Demo**](https://mizuki.mysqil.com/)
-[**📝 Documentation**](https://docs.mizuki.mysqil.com/)
+[**🖥️ Live Demo**](https://mistyrain.mysqil.com/)
+[**📝 Documentation**](https://docs.mistyrain.mysqil.com/)
 
 🌏 README Languages
 [**English**](./README.md) /
@@ -99,8 +99,8 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/matsuzaka-yuki/mizuki.git
-   cd mizuki
+   git clone https://github.com/matsuzaka-yuki/mistyrain.git
+   cd mistyrain
    ```
 
 2. **Install dependencies:**
