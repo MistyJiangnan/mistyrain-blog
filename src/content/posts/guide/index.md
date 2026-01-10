@@ -31,7 +31,7 @@ draft: false
 
 | Attribute     | Description                                                                                                                                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title ofpost.                                                                                                                                                                                      |
+| `title`       | The title of the post.                                                                                                                                                                                      |
 | `published`   | The date the post was published.                                                                                                                                                                            |
 | `pinned`      | Whether this post is pinned to the top of the post list.                                                                                                                                                   |
 | `priority`    | The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).                                                                                                                          |
