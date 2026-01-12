@@ -25,207 +25,84 @@ export interface TimelineItem {
 
 export const timelineData: TimelineItem[] = [
 	{
-		id: "current-study",
-		title: "Studying Computer Science and Technology",
+		id: "current-works",
+		title: "运维开发专家 / SRE 工程师",
 		description:
-			"Currently studying Computer Science and Technology, focusing on web development and software engineering.",
-		type: "education",
-		startDate: "2022-09-01",
-		location: "Beijing",
-		organization: "Beijing Institute of Technology",
-		skills: ["Java", "Python", "JavaScript", "HTML/CSS", "MySQL"],
-		achievements: [
-			"Current GPA: 3.6/4.0",
-			"Completed data structures and algorithms course project",
-			"Participated in multiple course project developments",
-		],
-		icon: "material-symbols:school",
-		color: "#059669",
-		featured: true,
-	},
-	{
-		id: "mistyrain-blog-project",
-		title: "Mizuki Personal Blog Project",
-		description:
-			"A personal blog website developed using the Astro framework as a practical project for learning frontend technologies.",
-		type: "project",
-		startDate: "2024-06-01",
-		endDate: "2024-08-01",
-		skills: ["Astro", "TypeScript", "Tailwind CSS", "Git"],
-		achievements: [
-			"Mastered modern frontend development tech stack",
-			"Learned responsive design and user experience optimization",
-			"Completed the full process from design to deployment",
-		],
-		links: [
-			{
-				name: "GitHub Repository",
-				url: "https://github.com/example/mistyrain-blog",
-				type: "project",
-			},
-			{
-				name: "Live Demo",
-				url: "https://mistyrain-demo.example.com",
-				type: "website",
-			},
-		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
-		featured: true,
-	},
-	{
-		id: "summer-internship-2024",
-		title: "Frontend Development Intern",
-		description:
-			"Summer internship at an internet company, participating in frontend development of web applications.",
+			"专注于 DevOps 平台建设与 SRE 稳定性保障体系。作为打通开发与运维边界的“连接者”，致力于用工程化手段解决复杂的运维难题，提升研发效能与系统稳定性。",
 		type: "work",
-		startDate: "2024-07-01",
-		endDate: "2024-08-31",
-		location: "Beijing",
-		organization: "TechStart Internet Company",
-		position: "Frontend Development Intern",
-		skills: ["React", "JavaScript", "CSS3", "Git", "Figma"],
+		startDate: "2022-07-01",
+		endDate: "", // Present
+		location: "Shanghai, China",
+		organization: "某知名互联网企业",
+		position: "SRE / DevOps Engineer",
+		skills: [
+			"React",
+			"TypeScript",
+			"Go",
+			"Node.js",
+			"Kubernetes",
+			"Docker",
+			"CI/CD",
+		],
 		achievements: [
-			"Completed user interface component development",
-			"Learned team collaboration and code standards",
-			"Received outstanding internship performance certificate",
+			"主导一站式 DevOps 研发效能平台的前端架构与开发，打通从代码提交到生产发布的全链路",
+			"建设 SRE 可观测性平台，基于 Prometheus/Grafana 定制开发高可用监控大屏，实现故障秒级发现",
+			"开发自动化运维工具链，包括资源自动交付、故障自愈系统，降低人工运维成本 40%",
+			"优化 CI/CD 流水线引擎，引入容器化构建与缓存策略，将核心服务构建速度提升 50%+",
 		],
 		icon: "material-symbols:work",
-		color: "#DC2626",
+		color: "#3B82F6", // Blue
 		featured: true,
 	},
 	{
-		id: "web-development-course",
-		title: "Completed Web Development Online Course",
+		id: "state-grid-works",
+		title: "前端开发工程师",
 		description:
-			"Completed a full-stack web development online course, systematically learning frontend and backend development technologies.",
-		type: "achievement",
-		startDate: "2024-01-15",
-		endDate: "2024-05-30",
-		organization: "Mooc Website",
-		skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
-		achievements: [
-			"Received course completion certificate",
-			"Completed 5 practical projects",
-			"Mastered full-stack development fundamentals",
-		],
-		links: [
-			{
-				name: "Course Certificate",
-				url: "https://certificates.example.com/web-dev",
-				type: "certificate",
-			},
-		],
-		icon: "material-symbols:verified",
-		color: "#059669",
-	},
-	{
-		id: "student-management-system",
-		title: "Student Management System Course Project",
-		description:
-			"Final project for the database course, developed a complete student information management system.",
-		type: "project",
-		startDate: "2023-11-01",
-		endDate: "2023-12-15",
-		skills: ["Java", "MySQL", "Swing", "JDBC"],
-		achievements: [
-			"Received excellent course project grade",
-			"Implemented complete CRUD functionality",
-			"Learned database design and optimization",
-		],
-		icon: "material-symbols:database",
-		color: "#EA580C",
-	},
-	{
-		id: "programming-contest",
-		title: "University Programming Contest",
-		description:
-			"Participated in a programming contest held by the university, improving algorithm and programming skills.",
-		type: "achievement",
-		startDate: "2023-10-20",
-		location: "Beijing Institute of Technology",
-		organization: "School of Computer Science",
-		skills: ["C++", "Algorithms", "Data Structures"],
-		achievements: [
-			"Won third prize in university contest",
-			"Improved algorithmic thinking ability",
-			"Strengthened programming fundamentals",
-		],
-		icon: "material-symbols:emoji-events",
-		color: "#7C3AED",
-	},
-	{
-		id: "part-time-tutor",
-		title: "Part-time Programming Tutor",
-		description:
-			"Provided programming tutoring for high school students, helping them learn Python basics.",
+			"服务于国家重点行业，参与电力系统核心业务平台的研发。在极其严格的内网环境与高稳定性要求下，完成了多个关键调度系统与数据可视化平台的大屏开发。",
 		type: "work",
-		startDate: "2023-09-01",
-		endDate: "2024-01-31",
-		position: "Programming Tutor",
-		skills: ["Python", "Teaching", "Communication"],
-		achievements: [
-			"Helped 3 students master Python basics",
-			"Improved expression and communication skills",
-			"Gained teaching experience",
-		],
-		icon: "material-symbols:school",
-		color: "#059669",
-	},
-	{
-		id: "high-school-graduation",
-		title: "High School Graduation",
-		description:
-			"Graduated from high school with excellent grades and was admitted to the Computer Science and Technology program at Beijing Institute of Technology.",
-		type: "education",
-		startDate: "2019-09-01",
+		startDate: "2020-07-01",
 		endDate: "2022-06-30",
-		location: "Jinan, Shandong",
-		organization: "No.1 High School of Jinan",
-		achievements: [
-			"College entrance exam score: 620",
-			"Received municipal model student award",
-			"Won provincial second prize in math competition",
+		location: "Nanjing, China",
+		organization: "国家电网 (State Grid)",
+		position: "Frontend Engineer",
+		skills: [
+			"Vue.js",
+			"JavaScript",
+			"ECharts",
+			"WebGL",
+			"Data Visualization",
 		],
-		icon: "material-symbols:school",
-		color: "#2563EB",
-	},
-	{
-		id: "first-programming-experience",
-		title: "First Programming Experience",
-		description:
-			"First encountered programming in high school IT class, started learning Python basic syntax.",
-		type: "education",
-		startDate: "2021-03-01",
-		skills: ["Python", "Basic Programming Concepts"],
 		achievements: [
-			'Completed first "Hello World" program',
-			"Learned basic loops and conditional statements",
-			"Developed interest in programming",
+			"参与电力业务管理系统的日常功能迭代与维护，确保业务流程顺畅",
+			"基于 Vue.js 和 ECharts 开发数据展示页面，协助业务人员进行数据监控",
+			"配合后端完成接口对接与调试，优化前端页面的响应速度与交互体验",
+			"负责内部系统的前端模块化开发，维护公共组件代码，提升代码复用率",
 		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
+		icon: "material-symbols:corporate-fare",
+		color: "#059669", // Green
+		featured: true,
 	},
 ];
 
-// Get timeline statistics
 export const getTimelineStats = () => {
 	const total = timelineData.length;
 	const byType = {
-		education: timelineData.filter((item) => item.type === "education")
-			.length,
 		work: timelineData.filter((item) => item.type === "work").length,
 		project: timelineData.filter((item) => item.type === "project").length,
+		education: timelineData.filter((item) => item.type === "education")
+			.length,
 		achievement: timelineData.filter((item) => item.type === "achievement")
 			.length,
 	};
-
 	return { total, byType };
 };
 
-// Get timeline items by type
+export const getCurrentItems = () => {
+	return timelineData.filter((item) => !item.endDate);
+};
+
 export const getTimelineByType = (type?: string) => {
-	if (!type || type === "all") {
+	if (!type) {
 		return timelineData.sort(
 			(a, b) =>
 				new Date(b.startDate).getTime() -
@@ -241,35 +118,17 @@ export const getTimelineByType = (type?: string) => {
 		);
 };
 
-// Get featured timeline items
-export const getFeaturedTimeline = () => {
-	return timelineData
-		.filter((item) => item.featured)
-		.sort(
-			(a, b) =>
-				new Date(b.startDate).getTime() -
-				new Date(a.startDate).getTime(),
-		);
-};
-
-// Get current ongoing items
-export const getCurrentItems = () => {
-	return timelineData.filter((item) => !item.endDate);
-};
-
-// Calculate total work experience
 export const getTotalWorkExperience = () => {
-	const workItems = timelineData.filter((item) => item.type === "work");
-	let totalMonths = 0;
-
-	workItems.forEach((item) => {
-		const startDate = new Date(item.startDate);
-		const endDate = item.endDate ? new Date(item.endDate) : new Date();
-		const diffTime = Math.abs(endDate.getTime() - startDate.getTime());
-		const diffMonths = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 30));
-		totalMonths += diffMonths;
-	});
-
+	const totalMonths = timelineData
+		.filter((item) => item.type === "work")
+		.reduce((total, item) => {
+			const start = new Date(item.startDate);
+			const end = item.endDate ? new Date(item.endDate) : new Date();
+			const months =
+				(end.getFullYear() - start.getFullYear()) * 12 +
+				(end.getMonth() - start.getMonth());
+			return total + months;
+		}, 0);
 	return {
 		years: Math.floor(totalMonths / 12),
 		months: totalMonths % 12,

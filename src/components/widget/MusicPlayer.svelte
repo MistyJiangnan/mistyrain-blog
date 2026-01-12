@@ -52,8 +52,8 @@ let showError = false;
 
 // 当前歌曲信息
 let currentSong = {
-	title: "Sample Song",
-	artist: "Sample Artist",
+	title: "风雨",
+	artist: "怪啊姨 / BOBO Chicken",
 	cover: "/favicon/favicon.ico",
 	url: "",
 	duration: 0,

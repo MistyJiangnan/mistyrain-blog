@@ -24,7 +24,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "mistyrain's Blog",
 	subtitle: "运维前端的博客",
-	siteURL: "https://mistyrain-blog.vercel.app/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://misty-rain.cn/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2021-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
 	featurePages: {
 		anime: false, // 番剧页面开关
 		diary: false, // 日记页面开关
-		friends: false, // 友链页面开关
+		friends: true, // 友链页面开关
 		projects: false, // 项目页面开关
 		skills: true, // 技能页面开关
 		timeline: true, // 时间线页面开关
@@ -53,7 +53,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "MistyRain",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.png",
+		icon: "assets/home/home.webp",
 	},
 
 	bangumi: {
@@ -138,14 +138,14 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "太白遗风", // 主页横幅主标题
+			title: "每天都会越来越好", // 主页横幅主标题
 
 			subtitle: [
 				"长风破浪会有时，直挂云帆济沧海",
 				"天生我材必有用，千金散尽还复来",
 				"仰天大笑出门去，我辈岂是蓬蒿人",
 				"人生得意须尽欢，莫使金樽空对月",
-				"桃花潭水深千尺，不及汪伦送我情",
+				"路漫漫其修远兮，吾将上下而求索",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -253,8 +253,20 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "About",
-			url: "/about/",
+			url: "/content/",
 			icon: "material-symbols:info",
+			children: [
+				{
+					name: "About",
+					url: "/about/",
+					icon: "material-symbols:person",
+				},
+				{
+					name: "Friends",
+					url: "/friends/",
+					icon: "material-symbols:group",
+				},
+			],
 		},
 		{
 			name: "Others",
@@ -286,29 +298,9 @@ export const profileConfig: ProfileConfig = {
 	},
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/mistyrain",
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/mistyrain",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			url: "https://github.com/MistyJiangnan",
 		},
 	],
 };
@@ -366,8 +358,8 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "日常运维记录", // 公告标题
+	content: "欢迎来到我的博客！", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -382,7 +374,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
+	id: "495996756", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
@@ -549,7 +541,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -577,7 +569,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
